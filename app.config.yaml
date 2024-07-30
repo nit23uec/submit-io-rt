@@ -1,0 +1,3 @@
+extensions:
+  dx/asset-compute/worker/1:
+    $include: src/dx-forms-custom-submit-1/ext.config.yaml

@@ -1,0 +1,18 @@
+operations:
+  workerProcess:
+    - type: action
+      impl: dx-forms-custom-submit-1/submitForm
+actions: actions
+runtimeManifest:
+  packages:
+    dx-forms-custom-submit-1:
+      license: Apache-2.0
+      actions:
+        submitForm:
+          function: actions/submitForm/index.js
+          web: 'yes'
+          runtime: nodejs:18
+          limits:
+            concurrency: 10
+          annotations:
+            final: true
